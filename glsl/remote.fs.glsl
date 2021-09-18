@@ -1,7 +1,6 @@
-uniform int tvChannel;
-void main() {
-	// HINT: WORK WITH tvChannel HERE
+uniform vec3 remotePosition;
 
-	//Paint it red
-	gl_FragColor = vec4(1, 0, 0, 1);
+void main() {
+
+	gl_FragColor = vec4(0, 0, remotePosition.y, 1);
 }
