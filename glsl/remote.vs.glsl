@@ -3,8 +3,8 @@ uniform vec3 remotePosition;
 uniform float xoff;
 
 void main() {
-	/* HINT: WORK WITH remotePosition HERE! */
+    /* HINT: WORK WITH remotePosition HERE! */
 
     // Multiply each vertex by the model-view matrix and the projection matrix to get final vertex position
-    gl_Position = projectionMatrix * modelViewMatrix * vec4(position + vec3(xoff, 0.0, 0.0), 1.0);
+    gl_Position = projectionMatrix * modelViewMatrix * vec4(position + remotePosition + vec3(xoff, 0.0, 0.0), 1.0);
 }
