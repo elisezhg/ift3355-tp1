@@ -21,6 +21,9 @@ var armadilloMaterial = new THREE.ShaderMaterial({
 	uniforms: {
 		time: time,
 		fft: {type: 't', value: fft},
+		remotePosition0: remotePosition0,
+		remotePosition1: remotePosition1,
+		remotePosition2: remotePosition2,
 	}
 });
 var remoteMaterial0 = new THREE.ShaderMaterial({
